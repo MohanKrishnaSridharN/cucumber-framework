@@ -32,7 +32,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       
       - name: LS
-        run: ls -R & cd md.automation & ls -R
+        run: cd md.automation & pwd
              & mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=MohanKrishnaSridharN_cucumber-framework
     
       - name: Build and analyze
