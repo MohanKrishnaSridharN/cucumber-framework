@@ -32,6 +32,9 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         run: cd md.automation
+
+      - name: LS
+        run: ls -R
     
       - name: Build and analyze
         run: pwd
